@@ -10,6 +10,6 @@ import java.util.UUID;
 public class IdGenerator implements IdentifierGenerator {
     @Override
     public Serializable generate(SharedSessionContractImplementor sharedSessionContractImplementor, Object o) throws HibernateException {
-        return UUID.randomUUID();
+        return UUID.randomUUID().toString();
     }
 }

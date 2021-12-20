@@ -24,8 +24,8 @@ public class People {
 
     @Id
     @Column(name = "id")
-   // @GeneratedValue(generator = "id-generator")
-    //@GenericGenerator(name = "id-generator", strategy = "com.retail.backcountry.backcountrypoc.domain.IdGenerator")
+    @GeneratedValue(generator = "id-generator")
+    @GenericGenerator(name = "id-generator", strategy = "com.retail.backcountry.backcountrypoc.domain.IdGenerator")
     private String id;
 
     @Column(name = "first_name")
